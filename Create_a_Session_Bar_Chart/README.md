@@ -53,10 +53,19 @@ For session_id 5 has a duration greater or equal than 15 minutes.
 ## Psuedo code (My Approach)
 
 1. Convert duration from secs to mins
-2. 
-
-
-## Why is my psuedo code not efficient
+duration/60
+2. Apply case statement to get the different bins based on the condition
+SELECT CASE WHEN duration/60 >= 0 AND duration/60 <= 5
+                            THEN '[0-5>'
+                            WHEN duration/60 >= 5 AND duration/60 <= 10
+                            THEN '[5-10>'
+                            WHEN duration/60 >= 10 AND duration/60 <= 15
+                            THEN '[10-15>'
+                            ELSE '15 or more'
+                        END AS bin
+3. On grouping the bins, we get the count of session ids
+count(session_id) as total
+group by bin
 
 
 
