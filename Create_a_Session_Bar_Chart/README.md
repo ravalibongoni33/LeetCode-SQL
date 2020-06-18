@@ -21,6 +21,7 @@ Write an SQL query to report the (bin, total) in any order.
 The query result format is in the following example.
 
 Sessions table:
+
 +-------------+---------------+<br/>
 | session_id  | duration      |<br/>
 +-------------+---------------+<br/>
@@ -32,6 +33,7 @@ Sessions table:
 +-------------+---------------+<br/>
 
 Result table:
+
 +--------------+--------------+<br/>
 | bin          | total        |<br/>
 +--------------+--------------+<br/>
@@ -45,6 +47,8 @@ For session_id 1, 2 and 3 have a duration greater or equal than 0 minutes and le
 For session_id 4 has a duration greater or equal than 5 minutes and less than 10 minutes.
 There are no session with a duration greater or equial than 10 minutes and less than 15 minutes.
 For session_id 5 has a duration greater or equal than 15 minutes.
+
+[Click here to review the tables in right format](https://leetcode.com/problems/create-a-session-bar-chart/)
 
 ## Psuedo code (My Approach)
 

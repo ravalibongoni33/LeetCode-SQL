@@ -3,6 +3,10 @@
 ## Description
 
 
+
+
+[Click here to review the tables in right format](https://leetcode.com/problems/)
+
 ## Psuedo code (My Approach)
 
 
