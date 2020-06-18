@@ -67,6 +67,3 @@ SELECT CASE WHEN duration/60 >= 0 AND duration/60 <= 5 <br/>
 count(session_id) as total<br/>
 group by bin<br/>
 
-
-
-## Efficient solution
