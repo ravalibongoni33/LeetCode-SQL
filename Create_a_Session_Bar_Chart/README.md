@@ -52,20 +52,20 @@ For session_id 5 has a duration greater or equal than 15 minutes.
 
 ## Psuedo code (My Approach)
 
-1. Convert duration from secs to mins
+1. Convert duration from secs to mins <br/>
 duration/60
-2. Apply case statement to get the different bins based on the condition
-SELECT CASE WHEN duration/60 >= 0 AND duration/60 <= 5
-                            THEN '[0-5>'
-                            WHEN duration/60 >= 5 AND duration/60 <= 10
-                            THEN '[5-10>'
-                            WHEN duration/60 >= 10 AND duration/60 <= 15
-                            THEN '[10-15>'
-                            ELSE '15 or more'
-                        END AS bin
-3. On grouping the bins, we get the count of session ids
-count(session_id) as total
-group by bin
+2. Apply case statement to get the different bins based on the condition <br/>
+SELECT CASE WHEN duration/60 >= 0 AND duration/60 <= 5 <br/>
+                            THEN '[0-5>'<br/>
+                            WHEN duration/60 >= 5 AND duration/60 <= 10<br/>
+                            THEN '[5-10>'<br/>
+                            WHEN duration/60 >= 10 AND duration/60 <= 15<br/>
+                            THEN '[10-15>'<br/>
+                            ELSE '15 or more'<br/>
+                        END AS bin<br/>
+3. On grouping the bins, we get the count of session ids<br/>
+count(session_id) as total<br/>
+group by bin<br/>
 
 
 
