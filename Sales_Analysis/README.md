@@ -70,14 +70,14 @@ Both sellers with id 1 and 3 sold products with the most total price of 2800.
 
 ## Psuedo code (My Approach)
 
-1. Get the total price of each seller
+1. Get the total price of each seller <br/>
 SELECT SUM(PRICE)
     FROM Sales
     GROUP BY seller_id
-2. Get the top seller by ordering in desc 
+2. Get the top seller by ordering in desc <br/>
 ORDER BY price DESC
 LIMIT 1
-3. select the seller with high total price
+3. select the seller with high total price <br/>
 SELECT seller_id
 FROM Sales
 GROUP BY seller_id
