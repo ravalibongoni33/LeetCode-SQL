@@ -66,7 +66,7 @@ Result table:
 +-------------+<br/>
 Both sellers with id 1 and 3 sold products with the most total price of 2800.
 
-[Click here to review the tables in right format](https://https://leetcode.com/problems/sales-analysis-i/)
+[Click here to review the tables in right format](https://leetcode.com/problems/sales-analysis-i/)
 
 ## Psuedo code (My Approach)
 
